@@ -3,9 +3,10 @@ For the extra credit portion, I created a simple 3D modeling system using Bezier
 
 ### How I create the surface of revolution
 I use an array to store points that are used to draw the curve, which are in [0, 1], and transform them to 3D points by adding the z value as 0. Then I create rotation matrices to rotate these points around the y-axis. The number of rotations and degrees to rotate in each rotation is determined by a variable called levelOfDetails. The number of rotations equals to levelOfDetails and the degrees equals to 360.0 / levelOfDetails. To draw these new vertices as a surface, I need to connect them to form a mesh (or wireframe). I won't go too deep but this is how it look:
+                
+                
                 curve_i curve_i+1            
-                
-                
+            
                 v1------v3
                 
                 |     /  |
