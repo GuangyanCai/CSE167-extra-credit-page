@@ -28,6 +28,9 @@ Calcuate the normals of these triangles is trivial.
 * down arrow - rotate left
 
 ### Screenshots
+![screenshot1](https://github.com/GuangyanCai/CSE167-extra-credit-page/blob/master/screenshot1.png "Screenshot 1")
+![screenshot2](https://github.com/GuangyanCai/CSE167-extra-credit-page/blob/master/screenshot2.png "Screenshot 2")
+![screenshot3](https://github.com/GuangyanCai/CSE167-extra-credit-page/blob/master/screenshot3.png "Screenshot 3")
 
 ### Video
 <a href="https://www.youtube.com/watch?v=qCFOCko1BpU&feature=youtu.be&hd=1
