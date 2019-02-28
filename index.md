@@ -33,7 +33,7 @@ Calcuate the normals of these triangles is trivial.
 ![screenshot3](https://raw.githubusercontent.com/GuangyanCai/CSE167-extra-credit-page/master/screenshot3.png "Screenshot 3")
 
 
-### Video
+### Video (click the image below)
 <a href="https://www.youtube.com/watch?v=qCFOCko1BpU&feature=youtu.be&hd=1
 " target="_blank"><img src="http://img.youtube.com/vi/qCFOCko1BpU/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
