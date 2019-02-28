@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## CSE 167 HW3 Extra Credit Demo
+For the extra credit portion, I created a simple 3D modeling system using Bezier and B-Spline curves. Due to limited time was given, the only modeling option implemented is surface of resolution. Users will be able to draw Bezier or B-Spline curve the same way HW3 does and visualize the surface of revolution created by rotating the curve around the y-axis on the second screen. 
 
-You can use the [editor on GitHub](https://github.com/GuangyanCai/CSE167_extra_credit_page/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### How I create the surface of revolution
+I use an array to store points that are used to draw the curve, which are in [0, 1], and transform them to 3D points by adding the z value as 0. Then I create rotation matrices to rotate these points around the y-axis. The number of rotations and degrees to rotate in each rotation is determined by a variable called levelOfDetails. The number of rotations equals to levelOfDetails and the degrees equals to 360.0 / levelOfDetails. To draw these new vertices as a surface, I need to connect them to form a mesh (or wireframe). I won't go too deep but this is how it look:
+                curve_i curve_i+1            
+                
+                
+                v1------v3
+                
+                |     /  |
+                
+                |   /    |
+                
+                v2------v4
+                
+Calcuate the normals of these triangles is trivial.       
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Commands to use in the second screen 
+* enter - draw the surface of revolution based on the curve in the first window
+* "w" - toggle wireframe mode
+* "\+" - increase the level of details
+* "\-" - decrease the level of details
+* "r" - reset the position 
+* left arrow- rotate left
+* right arrow- rotate right
+* up arrow - rotate up
+* down arrow - rotate left
 
-### Markdown
+### Screenshots
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GuangyanCai/CSE167_extra_credit_page/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Video
+<a href="https://www.youtube.com/watch?v=qCFOCko1BpU&feature=youtu.be&hd=1
+" target="_blank"><img src="http://img.youtube.com/vi/qCFOCko1BpU/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
